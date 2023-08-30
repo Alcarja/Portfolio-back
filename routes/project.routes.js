@@ -11,4 +11,14 @@ router.get("/", async (req, res) => {
   }
 });
 
+router.get("/:projectId", async (req, res) => {
+  try {
+    const project = await Project.findById(req.params.projectId);
+    res.status(200).json(project);
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+});
+
 module.exports = router;

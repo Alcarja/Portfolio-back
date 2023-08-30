@@ -11,6 +11,10 @@ const projectSchema = new Schema({
     type: String,
     required: [true, "Description is required."],
   },
+  type: {
+    type: String,
+    required: [true, "Type is required."],
+  },
   technologies: {
     type: [String],
     required: [true, "Technologies are required."],
