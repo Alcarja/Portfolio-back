@@ -19,6 +19,10 @@ const projectSchema = new Schema({
     type: [String],
     required: [true, "Technologies are required."],
   },
+  link: {
+    type: String,
+    required: [true, "Link is required."],
+  },
   image: {
     type: String,
   },
