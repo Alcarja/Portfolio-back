@@ -26,6 +26,9 @@ const projectSchema = new Schema({
   image: {
     type: String,
   },
+  tags: {
+    type: [String],
+  },
 });
 
 const Project = model("Project", projectSchema);
